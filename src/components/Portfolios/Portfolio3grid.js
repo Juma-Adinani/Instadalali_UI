@@ -5,7 +5,7 @@ import Portfolio2griditem from "./Portfolio2griditem";
 
 class Portfolio3grid extends Component {
   state = {
-    activeItem: "*",
+      activeItem: "*",
   };
 
   componentDidMount() {
@@ -26,9 +26,7 @@ class Portfolio3grid extends Component {
         layoutMode: "masonry",
       });
     }
-
     // this.iso.arrange({ filter: newFilter });
-
     if (newFilter === "*") {
       this.iso.arrange({ filter: `*` });
     } else {
@@ -40,12 +38,13 @@ class Portfolio3grid extends Component {
 
   render() {
     return (
-      <section className="portfolio_area sec_pad bg_color">
+      <section className="portfolio_area sec_pad">
         <div
           clasName="container text-center"
           style={{ width: `100%`, textAlign: `center`, marginBottom: `100px` }}
         >
-          <h1 style={{ color: `white` }}>What's Within the App ?.</h1>
+          <h1>Sample App Screens</h1>
+          <p>These are samples of screenshots from the app</p>
         </div>
         <div className="container">
           <div className="row portfolio_gallery mb_30" id="work-portfolio">
@@ -104,31 +103,11 @@ class Portfolio3grid extends Component {
             />
            <Portfolio2griditem
               colClass="col-lg-4 col-sm-6 brand web"
-              pImg="app.jpg"
-              ptitle="Download the App"
-              tOne="in both iOS &"
-              tTwo="Android"
+              pImg="DalaliProfile.jpeg"
+              ptitle="Live Chat"
+              tOne="Within"
+              tTwo="the app"
             />
-             {/* 
-            <Portfolio2griditem
-              colClass="col-lg-4 col-sm-6 develop"
-              pImg="3-columns/3_col_10.jpg"
-              ptitle="Interior Design"
-              tOne="Develop"
-            />
-            <Portfolio2griditem
-              colClass="col-lg-4 col-sm-6 fashion"
-              pImg="3-columns/3_col_11.jpg"
-              ptitle="Portfolio Masonry"
-              tOne="fashion"
-            />
-            <Portfolio2griditem
-              colClass="col-lg-4 col-sm-6 develop fashion"
-              pImg="3-columns/3_col_12.jpg"
-              ptitle="Double Exposure"
-              tOne="Develop"
-              tTwo="Fashion"
-            /> */}
           </div>
         </div>
       </section>
@@ -136,12 +115,3 @@ class Portfolio3grid extends Component {
   }
 }
 export default Portfolio3grid;
-
-
-// echo "# Instadalali_UI" >> README.md
-// git init
-// git add .
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/Juma-Adinani/Instadalali_UI.git
-// git push -u origin main

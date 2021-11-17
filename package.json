@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/helper-builder-react-jsx": "^7.16.0",
     "concurrently": "^5.1.0"
   }
 }

@@ -54,15 +54,15 @@ class CustomNavbar extends Component {
               >
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
                   <li className="nav-item">
-                    <NavLink title="Home" className="nav-link" to="/">
+                    {/* <NavLink title="Home" className="nav-link" to="/">
                       Home
-                    </NavLink>
+                    </NavLink> */}
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <NavLink title="Pricing" className="nav-link" to="/Contact">
                       Contact
                     </NavLink>
-                  </li>
+                  </li> */}
                 </ul>
                 <a
                   className="btn btn_hover ${hbtnClass} wow fadeInRight"

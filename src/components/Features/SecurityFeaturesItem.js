@@ -8,8 +8,8 @@ class SecurityFeaturesItem extends Component{
             <div className={`media h_security_item ${itemClass}`}>
               <img src={require("../../img/home-security/" + image)} alt="" />
               <div className="media-body">
-                <h4 style={{ color: `white` }}>{Title}</h4>
-                <p style={{ color: `white` }}>{pText}</p>
+                <h4 style={{ color: `black` }}>{Title}</h4>
+                <p style={{ color: `black` }}>{pText}</p>
               </div>
             </div>
           </div>

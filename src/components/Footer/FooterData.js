@@ -1,10 +1,15 @@
 const FooterData = {
+  copywrite: `©HudumaBomba Inc. 2021 All rights reserved`,
+  contact:{
+    phone:"+255789544920", phoneFormated:"+255 789 544 920",
+    email:"info@instadalali.com",
+  },
   CompanyWidget: [
     {
       id: 1,
       title: "Get In Touch",
       description:
-        "Don’t miss any updates of our new templates and extensions.!",
+        "Don’t miss any updates of our new templates and extensions!",
     },
   ],
   AboutWidget: [
@@ -140,26 +145,26 @@ const FooterData = {
   socialIcon: [
     {
       id: 1,
-      url: "https://www.facebook.com/",
+      url: "https://www.facebook.com/instadalali",
       icon: "ti-facebook",
     },
     {
       id: 2,
-      url: "#",
+      url: "https://www.twitter.com/instadalali",
       icon: "ti-twitter-alt",
     },
     {
       id: 3,
-      url: "#",
+      url: "https://www.instagram.com/instadalali",
       icon: "ti-instagram",
     },
-    {
-      id: 4,
-      url: "#",
-      icon: "ti-linkedin",
-    },
+    // {
+    //   id: 4,
+    //   url: "#",
+    //   icon: "ti-linkedin",
+    // },
   ],
-  copywrite: "© HudumaBomba Inc.. 2021 All rights reserved.",
+ 
   TestimonialText: [
     {
       id: 1,

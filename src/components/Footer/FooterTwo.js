@@ -9,8 +9,8 @@ class FooterTwo extends Component {
     let FooterData = this.props.FooterData;
     return (
       <footer
-        className={`footer_area footer_area_four f_bg ${fClass}`}
-        style={{ background: `#385a5d`, borderTop: `thin solid #999` }}
+        className={`bg_color footer_area footer_area_four ${fClass}`}
+        
       >
         <div className="footer_top">
           <div className="container">
@@ -23,41 +23,42 @@ class FooterTwo extends Component {
                         className="f_widget company_widget wow fadeInLeft"
                         data-wow-delay="0.2s"
                       >
-                        <a href="index.html" className="f-logo">
+                        <a href=".#" className="f-logo">
                           <span>
                             <img
                               src={require("../../img/instadalali_logo.png")}
                               alt=""
                               style={{
-                                width: `100px`,
+                                width: `80px`,
                                 background: `white`,
                                 borderRadius: `50%`,
+                                marginLeft: `20px`, 
+                                paddingTop:4,paddingBottom:4,
                               }}
                             />
                           </span>
                           <span>
-                            <h4 style={{ color: `white` }}>Instadalali</h4>
+                            <h4 className="text-white">Instadalali</h4>
                           </span>
                         </a>
                         <div className="widget-wrap">
-                          <p className="f_400 f_p f_size_15 mb-0 l_height34">
-                            <span style={{ color: `white` }}>Email:</span>
+                          <p className="f_400 f_p f_size_15 mb-0 l_height34 text-white">
+                            <span className="text-white">Email:</span>
                             <a
-                              href="#"
-                              className="f_400"
-                              style={{ color: `white` }}
+                              href={`mailto:${FooterData.contact.email}`}
+                              className="f_400 text-white"
+                              
                             >
-                              instadalali@hudumabomba.com
+                              {FooterData.contact.email}
                             </a>
                           </p>
-                          <p className="f_400 f_p f_size_15 mb-0 l_height34">
-                            <span style={{ color: `white` }}>Phone:</span>
+                          <p className="f_400 f_p f_size_15 mb-0 l_height34 text-white">
+                            <span className="text-white">Phone:</span>
                             <a
-                              href="tel:948256347968"
-                              className="f_400"
-                              style={{ color: `white` }}
+                              href={`tel:${FooterData.contact.phone}`}
+                              className="f_400 text-white"
                             >
-                              +255 000 000 968
+                              {FooterData.contact.phoneFormated}
                             </a>
                           </p>
                         </div>
@@ -84,7 +85,7 @@ class FooterTwo extends Component {
                 <div className="f_social_icon_two text-center">
                   {FooterData.socialIcon.map((item) => {
                     return (
-                      <a href="/" key={item.id}>
+                      <a href={item.url} key={item.id}>
                         <i className={item.icon} style={{ color: `white` }}></i>
                       </a>
                     );
