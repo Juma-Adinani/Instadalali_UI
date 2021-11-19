@@ -1,5 +1,5 @@
 const FooterData = {
-  copywrite: `©HudumaBomba Inc. 2021 All rights reserved`,
+  copywrite: `©instadalali 2021 All rights reserved`,
   contact:{
     phone:"+255789544920", phoneFormated:"+255 789 544 920",
     email:"info@instadalali.com",
@@ -9,46 +9,10 @@ const FooterData = {
       id: 1,
       title: "Get In Touch",
       description:
-        "Don’t miss any updates of our new templates and extensions!",
+        "Don't miss any updates of our new templates and extensions!",
     },
   ],
   AboutWidget: [
-    {
-      id: 1,
-      title: "Download",
-      menuItems: [
-        {
-          id: 1,
-          url: "#",
-          text: "Company",
-        },
-        {
-          id: 2,
-          url: "#",
-          text: "Android App",
-        },
-        {
-          id: 3,
-          url: "#",
-          text: "ios App",
-        },
-        {
-          id: 4,
-          url: "#",
-          text: "Desktop",
-        },
-        {
-          id: 5,
-          url: "#",
-          text: "Projects",
-        },
-        {
-          id: 6,
-          url: "#",
-          text: "My tasks",
-        },
-      ],
-    },
     {
       id: 2,
       title: "Help",
@@ -114,34 +78,6 @@ const FooterData = {
       ],
     },
   ],
-  // SocialLinks: [
-  //   {
-  //     id: 1,
-  //     title: "Team Solutions",
-  //     menuItems: [
-  //       {
-  //         id: 1,
-  //         url: "#",
-  //         icon: "ti-facebook",
-  //       },
-  //       {
-  //         id: 2,
-  //         url: "#",
-  //         icon: "ti-twitter-alt",
-  //       },
-  //       {
-  //         id: 3,
-  //         url: "#",
-  //         icon: "ti-vimeo-alt",
-  //       },
-  //       {
-  //         id: 4,
-  //         url: "#",
-  //         icon: "ti-pinterest",
-  //       },
-  //     ],
-  //   },
-  // ],
   socialIcon: [
     {
       id: 1,
@@ -199,33 +135,6 @@ const FooterData = {
       authorPost: "UI/UX designer",
     },
   ],
-  aboutLinks: [
-    {
-      id: 1,
-      url: "#",
-      item: "Developer",
-    },
-    {
-      id: 2,
-      url: "#",
-      item: "Blog",
-    },
-    {
-      id: 3,
-      url: "#",
-      item: "Investor",
-    },
-    {
-      id: 4,
-      url: "#",
-      item: "Sitemap",
-    },
-    {
-      id: 5,
-      url: "#",
-      item: "Jobs",
-    },
-  ],
   helpLinks: [
     {
       id: 1,
@@ -253,71 +162,39 @@ const FooterData = {
       item: "Shop",
     },
   ],
-  PrivacyLinks: [
-    {
-      id: 1,
-      url: "#",
-      item: "Privacy Policy",
-    },
-    {
-      id: 2,
-      url: "#",
-      item: "Legal Agreement",
-    },
-    {
-      id: 3,
-      url: "#",
-      item: "Feedback",
-    },
-  ],
   about: [
     {
       id: 1,
-      url: "#",
+      url: "https://hudumabomba.com",
       text: "Company",
     },
     {
-      id: 2,
-      url: "#",
-      text: "Services",
-    },
-    {
       id: 3,
-      url: "#",
+      url: "/faq",
       text: "FAQ",
     },
   ],
   Solution: [
     {
-      id: 1,
-      url: "#",
-      text: "Help",
-    },
-    {
       id: 2,
-      url: "#",
+      url: "https://instagram.com/instadalali",
       text: "Community",
     },
     {
       id: 3,
-      url: "#",
+      url: "/contact",
       text: "Contact",
     },
   ],
   teamSolution: [
     {
-      id: 1,
-      url: "#",
-      text: "Policies",
-    },
-    {
       id: 2,
-      url: "#",
+      url: "/tnc",
       text: "Terms of use",
     },
     {
       id: 3,
-      url: "#",
+      url: "/privacy",
       text: "Privacy",
     }
   ],

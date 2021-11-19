@@ -26,7 +26,7 @@ class FooterTwo extends Component {
                         <a href=".#" className="f-logo">
                           <span>
                             <img
-                              src={require("../../img/instadalali_logo.png")}
+                              src={require("../../img/logo.png")}
                               alt=""
                               style={{
                                 width: `80px`,
@@ -95,12 +95,12 @@ class FooterTwo extends Component {
               <div className="col-lg-4 col-md-4 col-sm-12">
                 <ul className="list-unstyled f_menu text-right">
                   <li>
-                    <a href=".#" style={{ color: `white` }}>
+                    <a href="/tnc" className="text-white">
                       Terms of Use
                     </a>
                   </li>
                   <li>
-                    <a href=".#" style={{ color: `white` }}>
+                    <a href="/privacy" className="text-white">
                       Privacy Policy
                     </a>
                   </li>

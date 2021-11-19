@@ -1,5 +1,7 @@
 import React from "react";
 import Reveal from "react-reveal";
+import config from "../utils/config";
+
 const AppGetstarted = () => {
   return (
     <section className="get_started_area" style={{ background: `white` }}>
@@ -19,7 +21,7 @@ const AppGetstarted = () => {
                   className="f_700 f_p f_size_40 l_height50 mb_20 wow fadeInLeft"
                   data-wow-delay="0.3s"
                 >
-                Using VR and AR tours to help you choose your home
+                Use AI powered VR and AR tours choosing your home
                 </h2>
                 <p
                   className="f_400 f_p mb_40 wow fadeInLeft"
@@ -37,7 +39,9 @@ const AppGetstarted = () => {
                   shop smarter for your next home.
                 </p>
                 <a
-                  href=".#"
+                  href={config.download.android}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="app_btn app_btn_one wow fadeInLeft"
                   data-wow-delay="0.5s"
                 >
@@ -45,7 +49,9 @@ const AppGetstarted = () => {
                   Play Store
                 </a>
                 <a
-                  href=".#"
+                  href={config.download.ios}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="app_btn app_btn_two wow fadeInLeft"
                   data-wow-delay="0.6s"
                 >
@@ -56,7 +62,7 @@ const AppGetstarted = () => {
           </div>
           <div className="col-lg-6 text-right">
             <Reveal effect="fadeInRight" duration={2200}>
-              <img src={require("../img/home7/iPhoneX2.png")} alt="" />
+              <img src={require("../img/home7/hero.png")} alt="" />
             </Reveal>
           </div>
         </div>

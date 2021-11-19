@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Sticky from "react-stickynode";
+import config from "../utils/config";
 
 class CustomNavbar extends Component {
   render() {
-    var { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
+    const { mClass, nClass, cClass, slogo, hbtnClass } = this.props;
     return (
       <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
         <header className="header_area">
@@ -12,7 +13,7 @@ class CustomNavbar extends Component {
             <div className={`container ${cClass}`}>
               <Link className={`navbar-brand ${slogo}`} to="/">
                 <img
-                  src={require("../img/instadalali_logo.png")}
+                  src={require("../img/logo.png")}
                   alt=""
                   style={{
                     width: `100px`,
@@ -21,7 +22,7 @@ class CustomNavbar extends Component {
                   }}
                 />
                 <img
-                  src={require("../img/instadalali_logo.png")}
+                  src={require("../img/logo.png")}
                   alt="logo"
                   style={{ width: `103px` }}
                 />
@@ -65,9 +66,11 @@ class CustomNavbar extends Component {
                   </li> */}
                 </ul>
                 <a
-                  className="btn btn_hover ${hbtnClass} wow fadeInRight"
+                  className={`btn btn_hover ${hbtnClass} wow fadeInRight`}
                   data-wow-delay="0.9s"
-                  href="/#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={config.download.default}
                   style={{
                     background: `#fff`,
                     color: `#385a5d`,

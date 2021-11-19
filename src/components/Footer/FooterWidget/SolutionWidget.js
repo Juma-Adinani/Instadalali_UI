@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import Reveal from 'react-reveal/Reveal';
 class SolutionWidget extends Component {
     render(){
-        let FooterData = this.props.FooterData;
-        var {ftitle} = this.props;
+        const {ftitle, FooterData} = this.props;
         return (
           <Reveal effect="fadeInUp" duration={1400}>
             <div className="col-lg-3 col-md-6">
@@ -12,8 +11,7 @@ class SolutionWidget extends Component {
                 data-wow-delay="0.4s"
               >
                 <h3
-                  className="f-title f_600 t_color f_size_18 mb_40"
-                  style={{ color: `white` }}
+                  className="f-title f_600 t_color f_size_18 mb_40 text-white"
                 >
                   {ftitle}
                 </h3>
@@ -21,7 +19,7 @@ class SolutionWidget extends Component {
                   {FooterData.Solution.map((item) => {
                     return (
                       <li key={item.id}>
-                        <a href="/" style={{ color: `white` }}>
+                        <a href={item.url} className="text-white">
                           {item.text}
                         </a>
                       </li>
