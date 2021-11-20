@@ -19491,7 +19491,7 @@ a .h_head:hover {
   padding-top: 50px;
   background: #fafafd;
   position: relative;
-  /* z-index: 1; */
+  z-index: -1;
 }
 
 .erp_call_action_area:before {
@@ -19501,7 +19501,7 @@ a .h_head:hover {
   width: 100%;
   left: 0;
   height: 100%;
-  z-index: -1;
+  z-index: 10;
 }
 
 .erp_call_action_area:after {
@@ -19510,6 +19510,7 @@ a .h_head:hover {
   position: absolute;
   z-index: 10;
   top: -80%;
+  opacity: 0.8;
   background-color: #fafafd;
   min-height: 560px;
   width: 100%;

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link,
+  // NavLink
+} from "react-router-dom";
 import Sticky from "react-stickynode";
 import config from "../utils/config";
 
